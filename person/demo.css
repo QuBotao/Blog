@@ -1,0 +1,122 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  position: absolute;
+  width: 900px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box{
+  transform-style: preserve-3d;
+  width: 180px;
+  height: 60px;
+  display: block;
+  transition:  all 0.5s ease-out;
+}
+
+.swrapper li a {
+  display: line-block;
+  width: 180px;
+  height: 60px;
+  float: left;
+}
+
+.swrapper:after{
+    display:block;
+    content: "";
+    clear: both;
+}
+
+.font , .back {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+
+}
+
+p {
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.one {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient( to top right, rgba(255, 87, 34, 1) 0%, rgba(251, 140, 0, 1) 100%);
+}
+
+.two {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient( to top right, rgba(63, 81, 181, 1) 0%, rgba(3, 155, 229, 1) 40%);
+}
+
+.three {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient( to top right, rgba(156, 204, 101, 1) 0%, rgba(38, 198, 218, 1) 50%);
+}
+
+.four {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient( to bottom right, rgba(63, 81, 181, 1) 0%, rgba(171, 71, 188, 1) 70%);
+}
+
+.five {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient( to top right, rgba(117, 117, 117, 1) 0%, rgba(33, 33, 33, 1) 90%);
+}
+
+.font {
+  transform: translateZ(30px);
+}
+
+.back {
+  transform: rotateX(-90deg) translateZ(30px);
+}
+
+.downlist1 {  
+  position: absolute;
+  top:60px;
+  width: 180px;
+  height: 240px;
+  transform: rotateX(90deg);
+  transition: 0.2s all linear;   
+}
+
+.downlist2 {
+  position: absolute;
+  top:60px;
+  left: 180px;
+  width: 180px;
+  height: 180px;
+  transform: rotateX(90deg);
+  transition: 0.2s all linear;   
+}
+
+.swrapper li:hover .downlist1 {
+    transform: rotateX(0deg); 
+}
+
+.swrapper li:hover .downlist2 {
+    transform: rotateX(0deg); 
+}
+
+.sswrapper:hover .box{
+  transform:  rotateX(90deg) ;
+}
+
+#music:not(:target){
+    display: none;
+}

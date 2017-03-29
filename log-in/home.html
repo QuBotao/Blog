@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./BootstrapTools/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="./ButtonTools/ButtonTools.css">
+	<link rel="stylesheet" id="css">
+	<style type="text/css">
+		#c {
+		  overflow: hidden;
+		  background: #000;
+		}
+		#link {
+		  position: fixed;
+		}
+		.container{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="link" class="button button-glow button-border button-rounded button-primary" >Touch Me</button>
+	<canvas id="c"></canvas>
+	<div class="container" id = 'wrapperc'>
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class = 'login'>
+				  	<a href="#login" class="button button-3d button-caution" id = 'a'>
+				  		<p>快速登陆</p>
+				  	</a>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class = "register">
+					<a href="#register" class="button button-3d button-royal" id = 'a'>
+						<p>快速注册</p>
+					</a>
+				</div>
+			</div>
+		</div>	
+		<form class="form-horizontal" id = 'login'>
+			<div class="form-group">
+			    <label for="inputEmail3" class="col-sm-4  control-label" id = 'login-wrapper'>Account number</label>
+			    <div class="col-sm-6 ">
+			      <input type="text" class="form-control" id="inputEmail3" placeholder="Account number">
+			    </div>						
+			</div>
+			<div class="form-group ">
+			    <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+			    <div class="col-sm-6 ">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    </div>
+			</div>
+			<div class="form-group" id = 'button-wrapper'>
+			    <div class="col-sm-offset-5 col-sm-10">
+			    	<button type="submit" class="btn btn-default btn-success">Sign in</button>
+			    </div>
+			</div>			
+		</form>			
+		<form class="form-horizontal" id= 'register'>
+			<div class = 'register-wrapper'>
+			  	<div class="form-group">
+			    	<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+			    	<div class="col-sm-6">
+			      		<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    	</div>
+			  	</div>
+				<div class="form-group">
+				    <label for="inputEmail3" class="col-sm-4 control-label">Account number</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control " id="inputEmail3" placeholder="Account number">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+			    	<div class="col-sm-6">
+			      		<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="inputPassword3" class="col-sm-4 control-label">Confirm Password</label>
+			    	<div class="col-sm-6">
+			      		<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    	</div>
+			  	</div>			
+				<div class="form-group" id = 'button-wrapper' >
+				    <div class="col-sm-offset-5 col-sm-10">
+				    	<button type="submit" class="btn btn-default btn-success">Sign in</button> 		      
+				    </div>
+				</div>			
+			</div>
+		</form>	
+	</div>
+	<script type="text/javascript" src = 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js'></script>
+	<script type="text/javascript" src = '../out/index.js'></script>
+	<script type="text/javascript" src = './BootstrapTools/js/jquery.js'></script>
+	<script type="text/javascript" src = './BootstrapTools/js/bootstrap.min.js'></script>
+</body>
+</html>

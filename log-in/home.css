@@ -1,0 +1,36 @@
+.form-horizontal{
+  margin-top: 70px;  
+}
+
+label {
+  color:white;
+}
+
+p{
+  text-overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#a,#button-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container{
+  position:fixed;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%); 
+}
+
+
+#login:not(:target) {
+  display: none;
+}
+
+#register:not(:target) {
+  display: none;
+}
+
